@@ -18,7 +18,7 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                echo 'Deployment verification...'
+                echo 'Deploying application...'
                 sh 'docker run --rm myapp:latest'
             }
         }
